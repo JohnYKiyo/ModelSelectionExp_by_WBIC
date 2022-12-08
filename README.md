@@ -1,0 +1,2 @@
+# ModelSelectionExp_by_WBIC
+モデル選択の情報量基準WBICを用いたモデル選択の実験とWBICの計算方法のNotebook
