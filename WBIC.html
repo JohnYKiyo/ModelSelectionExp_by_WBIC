@@ -14600,7 +14600,7 @@ E_{X^n}[F_n]=−n\int q(x)\log q(x) dx + \int q(x^n) \log \frac{q(x^n)}{p(x^n)}d
 $$
 真の分布のエントロピーは変わらないとすると，真の分布と周辺尤度の平均的な遠さを表すKL距離が小さくなるほど，自由エネルギーの平均は小さくなる．そこで，自由エネルギーが小さくなるほど周辺尤度がよく真の分布を近似していると言えるだろう．</p>
 <h2 id="WBIC">WBIC<a class="anchor-link" href="#WBIC">&#182;</a></h2><p>正則でないモデルにおいても，自由エネルギーの近似値を導出できるのが「WBIC(Watanabe Widely Applicable Bayesian Information Criterion)」である(Watanabe 2013，「広く使えるベイズ情報量規準(WBIC)」)．これは，逆温度が$\beta=1/\log n$のときの事後分布によって，
-対数損失$L_n(\theta)=−1\sum_i\log p(x_i|\theta)$のn倍について期待値をとったものとして定義される．
+対数損失$L_n(\theta)=−\frac{1}{n}\sum_i\log p(x_i|\theta)$のn倍について期待値をとったものとして定義される．
 $${\rm WBIC} = \frac{\int n L_n (\theta) \Pi_i p(x_i|\theta)^\beta \phi(\theta)d\theta}{\int \Pi_i p(x_i|\theta)^\beta \phi(\theta)d\theta}$$
 このとき自由エネルギー$F_n$とWBICは$\log n$
 のオーダーまで同じ漸近挙動をもつ．</p>
